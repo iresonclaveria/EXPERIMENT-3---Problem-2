@@ -1,0 +1,36 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main ()
+{
+	int a, b, Provinces = 3, Days = 7, week[Provinces][Days];
+	
+	cout<< "Province A = 1"<<endl;
+	cout<< "Province B = 2"<<endl;
+	cout<< "Province C = 3"<<endl;
+    cout << "Enter all temperature for a week of Province A, Province B and Province C: "<<endl;
+
+ 
+    for (a = 0; a < Provinces; a++)
+    {
+        for(b = 0; b < Days; b++)
+        {
+            cout << "Province " << a + 1 << ", Day " << b + 1 << " : ";
+            cin >> week[a][b];
+        }
+    }
+
+    cout << " "<<endl;
+    cout << "Displaying Values:"<<endl;
+
+    for (a = 0; a < Provinces; a++)
+    {
+        for(b = 0; b < Days; b++)
+        {
+            cout <<"Province "<< a + 1 <<", Day "<< b + 1 <<"="<< week[a][b] << endl;
+        }
+    }
+_getch();
+return 0;	
+}
